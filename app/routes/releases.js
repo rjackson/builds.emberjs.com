@@ -9,7 +9,7 @@ var ReleasesRoute = Ember.Route.extend({
       bucket: 'builds.emberjs.com',
       endpoint: 's3.amazonaws.com',
       prefix: 'tags/',
-      delimiter: '/',
+      delimiter: '',
       useSSL: false
     });
     return bucket;
