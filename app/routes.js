@@ -1,8 +1,8 @@
 function Routes() {
-  // // routes/resources
-  // this.resource('posts', function() {
-  //   this.route('new');
-  // });
+  this.route('about');
+  this.route('releases');
+  this.route('stable');
+  this.route('latest');
 }
 
 export default Routes;
