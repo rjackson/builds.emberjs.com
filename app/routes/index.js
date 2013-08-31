@@ -1,6 +1,6 @@
 var IndexRoute = Ember.Route.extend({
   model: function() {
-    return ['red', 'yellow', 'blue'];
+    //return ['red', 'yellow', 'blue'];
   }
 });
 
