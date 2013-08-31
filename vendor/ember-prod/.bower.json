@@ -1,12 +1,12 @@
 {
   "name": "ember-prod",
   "_cacheHeaders": {
-    "ETag": "\"18cc2bd4cc46d3056ed33dd4a9ddeaae\"",
-    "Last-Modified": "Fri, 30 Aug 2013 21:44:15 GMT",
-    "Content-Length": "997124",
+    "ETag": "\"83b1f70c04473fa6833276e974dfbbd8\"",
+    "Last-Modified": "Sat, 31 Aug 2013 06:32:14 GMT",
+    "Content-Length": "1000300",
     "Content-Type": "text/javascript"
   },
-  "_release": "e-tag:18cc2bd4c",
+  "_release": "e-tag:83b1f70c0",
   "main": "index.js",
   "_source": "http://builds.emberjs.com/stable/ember.prod.js",
   "_target": "*",

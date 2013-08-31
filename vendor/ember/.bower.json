@@ -1,12 +1,12 @@
 {
   "name": "ember",
   "_cacheHeaders": {
-    "ETag": "\"b993241d272d8c788f8cfb9ade55630c\"",
-    "Last-Modified": "Fri, 30 Aug 2013 21:44:14 GMT",
-    "Content-Length": "1040383",
+    "ETag": "\"11a4ed4750e054b8257a7062f192e0ef\"",
+    "Last-Modified": "Sat, 31 Aug 2013 06:32:11 GMT",
+    "Content-Length": "1043667",
     "Content-Type": "text/javascript"
   },
-  "_release": "e-tag:b993241d2",
+  "_release": "e-tag:11a4ed475",
   "main": "index.js",
   "_source": "http://builds.emberjs.com/stable/ember.js",
   "_target": "*",
