@@ -10,4 +10,7 @@ var App = Ember.Application.create({
 import routes from 'appkit/routes';
 App.Router.map(routes); // TODO: just resolve the router
 
+import formatBytes from 'appkit/helpers/format_bytes';
+import formatDateTime from 'appkit/helpers/format_date_time';
+
 export default App;
