@@ -38,6 +38,12 @@ module.exports = {
     src: ['vendor/**/*.js', 'vendor/**/*.css'],
     dest: 'tmp/public/'
   },
+  "zeroClipboard": {
+    expand: true,
+    cwd: 'vendor/zeroclipboard/',
+    src: ['ZeroClipboard.swf'],
+    dest: 'tmp/public/assets'
+  },
   "dist": {
     files: [{
       expand: true,

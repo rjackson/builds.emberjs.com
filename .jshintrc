@@ -34,7 +34,9 @@
     "fillIn",
     "click",
     "find",
-    "moment"
+    "moment",
+    "ZeroClipboard",
+    "Handlebars"
   ],
   "node" : false,
   "browser" : false,

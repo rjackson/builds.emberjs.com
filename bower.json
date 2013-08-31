@@ -6,6 +6,7 @@
     "handlebars": "1.0.0",
     "jquery": "~1.9.1",
     "qunit": "~1.12.0", 
-    "moment": "git@github.com:moment/moment.git"
+    "moment": "git@github.com:moment/moment.git",
+    "zeroclipboard": "~>1.2.0-beta.3"
   }
 }
