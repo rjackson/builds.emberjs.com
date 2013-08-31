@@ -10,8 +10,8 @@
     {{#each model.files}}
       <tr>
         <td><a {{bind-attr href=url}}>{{name}}</a></td>
-        <td>{{formatDateTime lastModified "LLL"}}</td>
-        <td>{{formatBytes size}}</td>
+        <td>{{format-date-time lastModified "LLL"}}</td>
+        <td>{{format-bytes size}}</td>
       </tr>
     {{/each}}
   </tbody>
