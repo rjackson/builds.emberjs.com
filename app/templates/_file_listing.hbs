@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Modified</th>
+      <th>Size</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each model.files}}
+      <tr>
+        <td><a {{bind-attr href=url}}>{{name}}</a></td>
+        <td>{{formatDateTime lastModified "LLL"}}</td>
+        <td>{{formatBytes size}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
