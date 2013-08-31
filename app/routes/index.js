@@ -1,6 +1,6 @@
 var IndexRoute = Ember.Route.extend({
-  model: function() {
-    console.log('index.route');
+  redirect: function() {
+    this.transitionTo('releases');
   }
 });
 
