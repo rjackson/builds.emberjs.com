@@ -21,6 +21,7 @@ module.exports = function(grunt) {
                      'transpile',
                      'jshint',
                      'copy:stage',
+                     'copy:zeroClipboard',
                      'emberTemplates:compile',
                      // Uncomment this line & `npm install --save-dev grunt-sass` for SASS support.
                      'compass',
