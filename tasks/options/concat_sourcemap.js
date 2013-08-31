@@ -7,6 +7,14 @@ module.exports = {
     },
   },
 
+  css: {
+    src: ['tmp/public/assets/**/*.css'],
+    dest: 'tmp/public/assets/app.css',
+    options: {
+      sourcesContent: true
+    },
+  },
+
   test: {
     src: 'tmp/transpiled/tests/**/*.js',
     dest: 'tmp/public/tests/tests.js',
