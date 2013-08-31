@@ -10,7 +10,8 @@ var S3Bucket = Ember.Object.extend({
   }.property('bucket','endpoint'),
 
   delimiterParameter: function(){
-    return 'delimiter=' + this.getWithDefault('delimiter','').toString();
+    var delimiter = this.getWithDefault('delimiter','').toString();
+    return (delimiter) ? 'delimiter=' + delimiter : '';
   }.property('delimiter'),
 
   markerParameter: function(){
@@ -67,7 +68,9 @@ var S3Bucket = Ember.Object.extend({
         );
       }
 
-      self.set('files', files);
+      self.set('files', files.sort(function(a,b){
+        return b.lastModified - a.lastModified;
+      }));
     });
   }.observes('queryUrl').on('init')
 });
