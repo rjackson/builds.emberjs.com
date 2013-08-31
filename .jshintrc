@@ -33,7 +33,7 @@
     "fillIn",
     "click",
     "find",
-    "moment",
+    "moment"
   ],
   "node" : false,
   "browser" : false,
