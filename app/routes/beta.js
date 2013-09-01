@@ -7,7 +7,7 @@ var BetaRoute = Ember.Route.extend({
       bucket: 'builds.emberjs.com',
       endpoint: 's3.amazonaws.com',
       prefix: 'beta/',
-      delimiter: '',
+      delimiter: '/',
       useSSL: false
     });
     return bucket;
