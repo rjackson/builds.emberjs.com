@@ -1,3 +1,3 @@
-Ember.Handlebars.helper('format-date-time', function(date, format) {
+Ember.Handlebars.helper('format-date-time', function(date) {
   return moment(date).fromNow();
 });
