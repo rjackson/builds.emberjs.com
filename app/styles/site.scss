@@ -44,8 +44,11 @@ body {
 #content {
   margin-top: 2em;
 
+  .features {
+    margin-top: 30%;
+  }
+
   .feature {
-    margin-top: 200px;
     h2 {
       margin-top: 2em;
     }
