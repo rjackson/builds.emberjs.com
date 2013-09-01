@@ -17,4 +17,4 @@ Then visit [http://localhost:8000/](http://localhost:8000/)
 
 ### Requirements
 
-[http://nodejs.org](Node.js).
+[Node.js](http://nodejs.org).
