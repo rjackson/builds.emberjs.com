@@ -4,14 +4,14 @@
       <th>File</th>
       <th>Modified</th>
       <th>Size</th>
-      <th>Copy to Clipboard</th>
+      <th>Quick Copy</th>
     </tr>
   </thead>
   <tbody>
     {{#each model.files}}
       <tr>
-        <td><a {{bind-attr href=url}}>{{name}}</a></td>
-        <td>{{format-date-time lastModified "LLL"}}</td>
+        <td><a {{bind-attr href=url }}>{{name}}</a></td>
+        <td>{{format-date-time lastModified}}</td>
         <td>{{format-bytes size}}</td>
         <td>{{copy-clipboard label="Url" text=url}} | {{copy-clipboard label="Script Tag" text=scriptTag}}</td>
       </tr>
