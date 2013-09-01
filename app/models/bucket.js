@@ -1,6 +1,8 @@
 import S3File from 'appkit/models/file';
 
 var S3Bucket = Ember.Object.extend({
+  files: [],
+
   protocol: function() {
     return this.get('useSSL') ? 'https://' : 'http://';
   }.property('useSSL'),
@@ -40,6 +42,10 @@ var S3Bucket = Ember.Object.extend({
   url: function(){
     return this.get('baseUrl') + '?' + this.get('queryParams');
   }.property('baseUrl','queryParams'),
+
+  filesPresent: function(){
+    return this.get('files').length;
+  }.property('files.@each'),
 
   load: function(){
     var self = this,

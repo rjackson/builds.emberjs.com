@@ -1,20 +1,27 @@
-<table class="table">
-  <thead>
-    <tr>
-      <th>File</th>
-      <th>Modified</th>
-      <th>Size</th>
-      <th>Quick Copy</th>
-    </tr>
-  </thead>
-  <tbody>
-    {{#each model.files}}
+{{#if filesPresent }}
+  <table class="table">
+    <thead>
       <tr>
-        <td><a {{bind-attr href=url }}>{{name}}</a></td>
-        <td>{{format-date-time lastModified}}</td>
-        <td>{{format-bytes size}}</td>
-        <td>{{copy-clipboard label="Url" text=url}} | {{copy-clipboard label="Script Tag" text=scriptTag}}</td>
+        <th>File</th>
+        <th>Modified</th>
+        <th>Size</th>
+        <th>Quick Copy</th>
       </tr>
-    {{/each}}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {{#each model.files}}
+        <tr>
+          <td><a {{bind-attr href=url }}>{{name}}</a></td>
+          <td>{{format-date-time lastModified}}</td>
+          <td>{{format-bytes size}}</td>
+          <td>{{copy-clipboard label="Url" text=url}} | {{copy-clipboard label="Script Tag" text=scriptTag}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+{{ else }}
+
+<br/>
+<p>There are currently no builds for {{title}}. Please check back soon.</p>
+
+{{/if}}
