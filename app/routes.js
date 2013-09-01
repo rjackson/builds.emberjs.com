@@ -1,8 +1,7 @@
 function Routes() {
-  this.route('daily');
-  this.route('releases');
-  this.route('stable');
-  this.route('latest');
+  this.route('release');
+  this.route('beta');
+  this.route('canary');
 }
 
 export default Routes;
