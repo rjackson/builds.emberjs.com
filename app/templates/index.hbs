@@ -1,20 +1,20 @@
 <div class="features section">
   <div class="feature">
-    <a href="#/latest">
-      <img src="/images/ember-productivity-sm.png" alt="Productivity">
-    </a>
-    <h2>Canary</h2>
+    {{#link-to 'release'}}
+      <img src="/images/ember-structure-sm.png" alt="Structure">
+    {{/link-to}}
+    <h2>Release</h2>
   </div>
   <div class="feature">
-    <a href="#/daily">
+    {{#link-to 'beta'}}
       <img src="/images/ember-handlebars-sm.png" alt="Handlebars">
-    </a>
+    {{/link-to}}
     <h2>Beta</h2>
   </div>
   <div class="feature">
-    <a href="#/stable">
-      <img src="/images/ember-structure-sm.png" alt="Structure">
-    </a>
-    <h2>Releases</h2>
+    {{#link-to 'canary'}}
+      <img src="/images/ember-productivity-sm.png" alt="Productivity">
+    {{/link-to}}
+    <h2>Canary</h2>
   </div>
 </div>

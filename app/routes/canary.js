@@ -1,12 +1,12 @@
 import S3Bucket from 'appkit/models/bucket';
 
-var LatestRoute = Ember.Route.extend({
+var CanaryRoute = Ember.Route.extend({
   model: function() {
     var bucket = S3Bucket.create({
-      title: 'Latest Development Builds',
+      title: 'Latest Canary Builds',
       bucket: 'builds.emberjs.com',
       endpoint: 's3.amazonaws.com',
-      prefix: 'latest/',
+      prefix: 'canary/',
       delimiter: '/',
       useSSL: false
     });
@@ -14,4 +14,4 @@ var LatestRoute = Ember.Route.extend({
   }
 });
 
-export default LatestRoute;
+export default CanaryRoute;

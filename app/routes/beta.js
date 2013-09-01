@@ -1,12 +1,12 @@
 import S3Bucket from 'appkit/models/bucket';
 
-var ReleasesRoute = Ember.Route.extend({
+var BetaRoute = Ember.Route.extend({
   model: function() {
     var bucket = S3Bucket.create({
-      title: 'Latest Release Builds',
+      title: 'Latest Beta Builds',
       bucket: 'builds.emberjs.com',
       endpoint: 's3.amazonaws.com',
-      prefix: 'tags/',
+      prefix: 'beta/',
       delimiter: '',
       useSSL: false
     });
@@ -14,4 +14,4 @@ var ReleasesRoute = Ember.Route.extend({
   }
 });
 
-export default ReleasesRoute;
+export default BetaRoute;
