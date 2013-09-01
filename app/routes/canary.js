@@ -6,7 +6,7 @@ var CanaryRoute = Ember.Route.extend({
       title: 'Latest Canary Builds',
       bucket: 'builds.emberjs.com',
       endpoint: 's3.amazonaws.com',
-      prefix: 'canary/',
+      prefix: 'latest/',
       delimiter: '/',
       useSSL: false
     });
