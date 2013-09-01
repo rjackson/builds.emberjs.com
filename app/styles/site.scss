@@ -413,6 +413,22 @@ ol {
         &:hover { color: #ffffff }
       }
 
+      a.active {
+        color: #331915;
+        text-shadow: rgba(255, 255, 255, 0.2) 0 1px 0px;
+        background-color: #bf4737;
+        background-color: rgba(0, 0, 0, 0.2);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        border: 1px solid #923c2e;
+        -webkit-box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0px, inset rgba(0, 0, 0, 0.17) 0 1px 1px;
+        -moz-box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0px, inset rgba(0, 0, 0, 0.17) 0 1px 1px;
+        box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0px, inset rgba(0, 0, 0, 0.17) 0 1px 1px;
+      }
+
       &.active a {
         color: #331915;
         @include text-shadow(rgba(255, 255, 255, 0.2) 0 1px 0px);
