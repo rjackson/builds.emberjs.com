@@ -12,6 +12,11 @@ $col-spacing: 20px;
 $sidebar-width: $col-width * 4 + $col-spacing * 3;
 $content-width: $page-width - $sidebar-width - $col-spacing * 2;
 
+@media (max-height: 600px) {
+  #footer {
+    position: relative !important;
+  }
+}
 
 @mixin width-for-columns($cols) {
   width: $cols * $col-width + ($cols - 1) * $col-spacing;
@@ -23,7 +28,7 @@ $content-width: $page-width - $sidebar-width - $col-spacing * 2;
 
 #footer {
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
   display: inline-block;
   width: 100%;
 }
